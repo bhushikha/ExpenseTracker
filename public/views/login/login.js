@@ -6,7 +6,7 @@ async function login(e) {
             password: e.target.password.value
 
         }
-        axios.post("http://localhost:3000/user/login", loginDetails)
+        axios.post("http://13.53.122.200:3000/user/login", loginDetails)
             .then(response => {
                 if (response.status == 200) {
                     alert(response.data.message)

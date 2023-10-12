@@ -24,7 +24,7 @@
 //                 from: 'deepak545608@gmail.com',
 //                 subject: 'Sending with SendGrid is Fun',
 //                 text: 'and easy to do anywhere, even with Node.js',
-//                 html: `<h1>http://localhost:3000/password/resetpassword/${id}</h1>`,
+//                 html: `<h1>http://13.53.122.200:3000/password/resetpassword/${id}</h1>`,
 //             }
 
 //             sgMail
@@ -73,7 +73,7 @@ exports.getForgotpassword = async (req, res, next) => {
                 to: [{ email: email }],
                 subject: 'Sending with SendinBlue is Fun',
                 textContent: 'and easy to do anywhere, even with Node.js',
-                htmlContent: `<h1>http://localhost:3000/password/resetpassword/${id}</h1>`
+                htmlContent: `<h1>http://13.53.122.200:3000/password/resetpassword/${id}</h1>`
             });
             sendSmtpEmail.apiKey = process.env.SENDINBLUE_API_KEY;
 
