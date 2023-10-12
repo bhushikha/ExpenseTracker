@@ -55,7 +55,8 @@ app.use(RazorpayRoutes)
 
 
 app.use((req,res)=>{
-  console.log('url',"done",req.url)
+  console.log('url',req.url );
+  console.log("done")
   res.sendFile(path.join(__dirname,`public/views/${req.url}`));
   
 
