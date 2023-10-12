@@ -56,8 +56,7 @@ app.use(RazorpayRoutes)
 
 app.use((req,res)=>{
   console.log('url',req.url );
-  console.log("done")
-  console.log("Done removing logs")
+  console.log("Removed")
   res.sendFile(path.join(__dirname,`public/views/${req.url}`));
   
 
